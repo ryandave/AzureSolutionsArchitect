@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-3a4c01b5b193451c5a4f.js"
+    "url": "webpack-runtime-06388584645f518120bd.js"
   },
   {
     "url": "framework-dbb498007a7447f28d8e.js"
   },
   {
-    "url": "app-8375c678e7764ec82a0f.js"
+    "url": "app-2887459cd4bcc5840684.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "cad4f9df8b401fd5b83e3060c88c59aa"
+    "revision": "dc4571d14156e7f1c4e02290aa640f83"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
@@ -48,14 +48,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "858345196e2b943bf95c6defdf3827ca"
+    "revision": "8ca67a28beaac0fb9346f7839de0cac7"
   },
   {
     "url": "polyfill-4b1e8b7e04c413f9811f.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "71088208054f7ee8a18e14e922dc7442"
+    "revision": "715322ab381cbbef55ad6ff74bff65f4"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -142,12 +142,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/Azure-Solutions-Architect`), ``)
+  pathname = pathname.replace(new RegExp(`^/AzureSolutionsArchitect`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/Azure-Solutions-Architect/app-8375c678e7764ec82a0f.js`))) {
+  if (!resources || !(await caches.match(`/AzureSolutionsArchitect/app-2887459cd4bcc5840684.js`))) {
     return await fetch(event.request)
   }
 
@@ -160,7 +160,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/Azure-Solutions-Architect/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/AzureSolutionsArchitect/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
