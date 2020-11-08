@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'ASA Expert Notes',
-  manifestName: 'Prologue',
-  manifestShortName: 'Landing', 
+  manifestName: 'Azure Solutions Architect',
+  manifestShortName: 'ASA Expert', 
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',

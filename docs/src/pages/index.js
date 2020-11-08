@@ -11,9 +11,9 @@ import SideBar from '../components/SideBar';
 </a> */}
 
 const sections = [
-  { id: 'network', name: 'Network infrastructure', icon: 'fa-connectdevelop' },
-  { id: 'storage', name: 'Storage infrastructure', icon: 'fa-cubes' },
-  { id: 'compute', name: 'Compute infrastructure', icon: 'fas fa-desktop' },
+  { id: 'network', name: 'Network', icon: 'fa-connectdevelop' },
+  { id: 'storage', name: 'Storage', icon: 'fa-cubes' },
+  { id: 'compute', name: 'Computing IaaS', icon: 'fas fa-desktop' },
   { id: 'operations', name: 'Operations', icon: 'fa-server' },
   { id: 'data', name: 'Data Platforms', icon: 'fa-database' },
 ];
@@ -39,7 +39,7 @@ const IndexPage = () => (
       <section id="network" className="two">
         <div className="container">
           <header>
-            <h2>Network infrastructure</h2>
+            <h2>Architect network infrastructure in Azure</h2>
           </header>
 
           <p>
@@ -56,7 +56,7 @@ const IndexPage = () => (
       <section id="storage" className="two">
         <div className="container">
           <header>
-            <h2>Storage infrastructure</h2>
+            <h2>Architect storage infrastructure in Azure</h2>
           </header>
 
           <p>
@@ -73,7 +73,7 @@ const IndexPage = () => (
       <section id="compute" className="two">
         <div className="container">
           <header>
-            <h2>Compute infrastructure</h2>
+            <h2>Architect compute infrastructure in Azure</h2>
           </header>
           <p>
             THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_
@@ -88,7 +88,7 @@ const IndexPage = () => (
       <section id="operations" className="two">
         <div className="container">
           <header>
-            <h2>Infrastructure operations</h2>
+            <h2>Architect infrastructure operations in Azure</h2>
           </header>
           <p>
             THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_
@@ -103,7 +103,7 @@ const IndexPage = () => (
       <section id="data" className="two">
         <div className="container">
           <header>
-            <h2>Data Platforms</h2>
+            <h2>Architect a data platform in Azure</h2>
           </header>
           <p>
             THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_THIS-IS-FILLER-TEXT_
